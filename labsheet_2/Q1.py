@@ -1,0 +1,15 @@
+# Q1. Linear Search
+def linear_search(arr, key):
+    n = len(arr)
+    for i in range(n):
+        if arr[i] == key:
+            return i
+    return -1
+arr = list(map(int, input("\nEnter the elements: ").split()))
+key = int(input("Enter the element to search: "))
+result = linear_search(arr, key)
+if result != -1:
+    print("Element found at index:", result)
+else:
+    print("Element not found")
+print("\n")
